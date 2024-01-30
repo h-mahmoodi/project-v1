@@ -1,0 +1,36 @@
+.list {
+  list-style: none;
+}
+
+.listContainer {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.listCount {
+  font-size: 1rem;
+}
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
