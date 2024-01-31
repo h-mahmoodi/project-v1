@@ -10,7 +10,10 @@ const fetchData = (setData: (data: Beer) => void, id?: string) => {
       const response = await getBeer(id);
       setData(response.data);
     } catch (error) {
-      const allData = JSON.parse(localStorage.beers);
+      let allData = [];
+      if (localStorage.beers) {
+        allData = JSON.parse(localStorage.beers);
+      }
       const data = allData.filter((item: Beer) => item.id === id)[0];
       setData(data);
       if (!data) {

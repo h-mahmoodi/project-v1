@@ -13,16 +13,16 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  // <React.StrictMode>
-  <AppContextProvider>
-    <FavoriteContextProvider>
-      <CssBaseline />
-      <ThemeProvider theme={theme}>
-        <Router />
-      </ThemeProvider>
-    </FavoriteContextProvider>
-  </AppContextProvider>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <AppContextProvider>
+      <FavoriteContextProvider>
+        <CssBaseline />
+        <ThemeProvider theme={theme}>
+          <Router />
+        </ThemeProvider>
+      </FavoriteContextProvider>
+    </AppContextProvider>
+  </React.StrictMode>
 );
 
 swDev();

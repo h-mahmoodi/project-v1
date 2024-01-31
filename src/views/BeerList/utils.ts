@@ -12,7 +12,10 @@ const fetchData = (
       setData(response.data);
       localStorage.setItem("beerList", JSON.stringify(response.data));
     } catch (error) {
-      const data = JSON.parse(localStorage.beerList);
+      let data = [];
+      if (localStorage.beerList) {
+        data = JSON.parse(localStorage.beerList);
+      }
       setData(data);
       if (!data) {
         handle(error);

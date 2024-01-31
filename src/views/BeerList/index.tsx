@@ -160,7 +160,10 @@ const BeerList = () => {
     <article>
       <section>
         <header>
-          <h1>BeerList page</h1>
+          <h1>
+            <span>BeerList page </span>
+            <span>(Total items:{metadata?.total || beerList?.length})</span>
+          </h1>
         </header>
 
         <Paper style={{ padding: "1rem", marginBottom: "1rem" }}>
